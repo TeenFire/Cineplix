@@ -17,7 +17,9 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '6159823074:AAGr6sEoiwVjInFou3xVsw-I1kGtj-z
 
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://te.legra.ph/file/30ef18b360b85a33f712b.jpg https://te.legra.ph/file/e17896174c04e67417b4a.jpg https://te.legra.ph/file/ae7342b2b4b4c0d0b448a.jpg https://te.legra.ph/file/2405007ed86482c637118.jpg')).split()
+
+PICS = (environ.get('PICS', 'https://graph.org/file/f612a75d2304d0fea7ce6.jpg https://graph.org/file/c5c38a0cf5e83726ab894.jpg')).split()
+
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1058015838').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001638006524').split()]
